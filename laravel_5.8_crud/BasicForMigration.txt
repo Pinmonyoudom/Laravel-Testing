@@ -1,0 +1,18 @@
+// install laravel use Globa or Composer
++ composer create-project --prefer-dist laravel/laravel laravel58crud
++ laravel new laravelcrud58crud
+
+
+++++ in app -> Providers -> AppServiceProvider.php
+
++ use Illuminate\Support\Facades\Schema;
+
++ public function boot()
+    {
+        Schema::defaultStringLength(191);
+    }
+
+
+http://localhost:8000/books/create
+http://localhost:8000/books/1/edit
+http://localhost:8000/books
